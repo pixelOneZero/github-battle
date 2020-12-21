@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+import Popular from './components/Popular'
 
 // component
 // state
@@ -15,8 +16,8 @@ function isAuthenticated() {
 class App extends React.Component {
   render() {
     return (
-      <div>
-        { isAuthenticated() === true && <div>Hello Mike!</div>}
+      <div className='container'>
+        <Popular/>
       </div>
     )
   }
